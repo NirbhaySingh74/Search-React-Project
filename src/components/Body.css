@@ -1,0 +1,114 @@
+/*
+
+.my-component-container {
+  margin: 20px;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-item {
+  flex: 0 0 calc(25% - 20px); 
+  margin: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 5px;
+}
+
+.user-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.user-details {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.user-divider {
+  width: 80%; 
+  margin: 10px auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .user-item {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .user-item {
+    flex-basis: calc(100% - 20px);
+  }
+}
+*/
+/* Body.css */
+
+.my-component-container {
+  margin: 20px;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-item {
+  flex: 0 0 calc(25% - 20px); /* 25% width with 20px margin between items */
+  margin: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 6px, rgba(0, 0, 0, 0.12) 0px 4px 6px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.user-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.user-details {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.user-email {
+  color: #555;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .user-item {
+    flex-basis: calc(50% - 20px); /* 50% width on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .user-item {
+    flex-basis: calc(100% - 20px); /* 100% width on even smaller screens */
+  }
+}

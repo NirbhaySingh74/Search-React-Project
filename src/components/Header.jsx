@@ -1,8 +1,10 @@
 import { useState } from "react";
 import logo from "../assets/Swiggy.png";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 const Header = () => {
   const [isLoggedIn, setIsLogin] = useState(false);
+
   return (
     <div className="header">
       <div>
@@ -10,9 +12,15 @@ const Header = () => {
       </div>
       <div className="nav-items">
         <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">About Us</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact">Contact US</NavLink>
+          </li>
           <li>Cart</li>
           <button onClick={() => setIsLogin(!isLoggedIn)}>
             {isLoggedIn ? "Logout" : "Login"}
